@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Spartan";
+  src: url("font/PT Root UI_VF.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 1 1000;
+  font-stretch: 75% 100%;
+}
+
+:root {
+  font-size: 18px;
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  @apply overflow-y-scroll;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: 0ms !important;
+    animation-duration: 1ms !important;
+  }
+}
+
+.theme-neutral {
+  --theme-bg-light-color: theme(colors.neutral.700);
+  --theme-bg-color: theme(colors.neutral.800);
+  --theme-bg-dark-color: theme(colors.neutral.900);
+  --theme-btn-color: theme(colors.neutral.600);
+  --theme-font-color: theme(colors.neutral.200);
+}
+
+.theme-zinc-indigo {
+  --theme-bg-light-color: theme(colors.zinc.700);
+  --theme-bg-color: theme(colors.zinc.800);
+  --theme-bg-dark-color: theme(colors.zinc.900);
+  --theme-btn-color: theme(colors.indigo.600);
+  --theme-font-color: theme(colors.indigo.50);
+}
+
+.theme-zinc-emerald {
+  --theme-bg-light-color: theme(colors.zinc.600);
+  --theme-bg-color: theme(colors.zinc.700);
+  --theme-bg-dark-color: theme(colors.zinc.800);
+  --theme-btn-color: theme(colors.emerald.600);
+  --theme-font-color: theme(colors.emerald.50);
+}
+
+.theme-zinc-cyan {
+  --theme-bg-light-color: theme(colors.zinc.600);
+  --theme-bg-color: theme(colors.zinc.700);
+  --theme-bg-dark-color: theme(colors.zinc.800);
+  --theme-btn-color: theme(colors.cyan.700);
+  --theme-font-color: theme(colors.cyan.50);
+}
+
+.theme-zinc-purple {
+  --theme-bg-light-color: theme(colors.zinc.600);
+  --theme-bg-color: theme(colors.zinc.700);
+  --theme-bg-dark-color: theme(colors.zinc.800);
+  --theme-btn-color: theme(colors.purple.600);
+  --theme-font-color: theme(colors.purple.50);
+}
+
+:not(input):focus-visible {
+  @apply appearance-none;
+  @apply !ring-2;
+  @apply !ring-offset-0;
+  @apply !border-inherit;
+  @apply !outline-0;
+}
+
+input:focus {
+  @apply appearance-none;
+  @apply !ring-offset-0;
+  @apply !border-inherit;
+  @apply !outline-0;
+}
+
+body {
+  background-color: var(--theme-bg-color);
+  color: var(--theme-font-color);
+}
+
+.flow {
+  @apply space-y-6;
+}
+
+@screen md {
+  .flow {
+    @apply space-y-12;
+  }
+}
+
+a:not(.unstyled) {
+  @apply font-light;
+  @apply underline;
+  transition: font-weight 0.15s;
+}
+
+a:not(.unstyled):hover {
+  @apply font-medium;
+  @apply !underline;
+}
+
+a:not(.unstyled):visited {
+  filter: brightness(0.8);
+}
+
+h1 {
+  @apply text-2xl;
+  @apply uppercase;
+
+  @screen sm {
+    font-size: theme("fontSize.3xl");
+  }
+
+  @screen md {
+    font-size: theme("fontSize.4xl");
+  }
+}
+
+h2 {
+  @apply text-lg;
+
+  @screen sm {
+    font-size: theme("fontSize.xl");
+  }
+
+  @screen md {
+    font-size: theme("fontSize.2xl");
+  }
+}
+
+.logo {
+  @apply uppercase;
+}
+
+@media (min-width: 60rem) {
+  .app-list {
+    @apply mx-16 rounded-tr-3xl rounded-bl-3xl border border-transparent overflow-hidden;
+    clip-path: polygon(2.5% 0%, 100% 0%, 97.5% 100%, 0% 100%);
+  }
+}
+
+.app-list .box {
+  @apply max-w-full;
+  @apply px-8;
+  @apply py-12;
+  @apply text-center;
+  background-color: var(--theme-btn-color);
+  color: var(--theme-font-color);
+}
+
+.app-list .box h2,
+.app-list .box p {
+  @apply leading-normal;
+  color: var(--theme-font-color);
+}
+
+.button {
+  text-decoration: none !important;
+  color: var(--theme-font-color);
+}
+
+.button:active {
+  transform: scale(0.95);
+  @apply outline-none ring-0;
+}
+
+.highlight {
+  border-color: transparent !important;
+  @apply bg-opacity-100 bg-gradient-to-r from-purple-600 to-pink-600;
+}
+
+.highlight:hover {
+  filter: contrast(1.2);
+}
+
+.button.disabled {
+  filter: saturate(0.75) !important;
+  @apply opacity-70;
+}
+
+.button.disabled:hover {
+  cursor: not-allowed;
+}

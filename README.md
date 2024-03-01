@@ -1,3 +1,3 @@
-# worksoffline.io
+# worksoffline.app
 
-Repo for index page of https://worksoffline.io .
+Repo for index page of https://worksoffline.app .

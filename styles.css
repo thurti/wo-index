@@ -26,9 +26,9 @@
 }
 
 .theme-neutral {
-  --theme-bg-light-color: theme(colors.neutral.700);
-  --theme-bg-color: theme(colors.neutral.800);
-  --theme-bg-dark-color: theme(colors.neutral.900);
+  --theme-bg-light-color: theme(colors.neutral.600);
+  --theme-bg-color: theme(colors.neutral.700);
+  --theme-bg-dark-color: theme(colors.neutral.800);
   --theme-btn-color: theme(colors.neutral.600);
   --theme-font-color: theme(colors.neutral.200);
 }

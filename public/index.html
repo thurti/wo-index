@@ -1,75 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>worksoffline.app</title>
-    <meta name="description" content="Web apps that work without internet connection.">
+    <meta
+      name="description"
+      content="Web apps that work without internet connection."
+    />
 
-    <link href="styles.css?sdf" rel="stylesheet">
+    <link href="styles.css?sdf" rel="stylesheet" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/icons/site.webmanifest">
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/icons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#2b4c7a">
-    <meta name="msapplication-config" content="/icons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/icons/site.webmanifest" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2b4c7a" />
+    <meta name="msapplication-config" content="/icons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
 
-    <meta property="og:title" content="worksoffline.app">
-    <meta property="og:description" content="Web apps that work without internet connection.">
-    <meta property="og:image" content="https://worksoffline.app/screenshot.png">
-    <meta property="og:url" content="https://worksoffline.app/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="worksoffline.app">
-    <meta name="twitter:description" content="Web apps that work without internet connection.">
-    <meta name="twitter:image" content="https://worksoffline.app/screenshot.png">
-    <meta name="twitter:creator" content="@_thurti">
-    <link rel="me" href="https://social.anoxinon.de/@thurti">
-
+    <meta property="og:title" content="worksoffline.app" />
+    <meta
+      property="og:description"
+      content="Web apps that work without internet connection."
+    />
+    <meta
+      property="og:image"
+      content="https://worksoffline.app/screenshot.png"
+    />
+    <meta property="og:url" content="https://worksoffline.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="worksoffline.app" />
+    <meta
+      name="twitter:description"
+      content="Web apps that work without internet connection."
+    />
+    <meta
+      name="twitter:image"
+      content="https://worksoffline.app/screenshot.png"
+    />
+    <meta name="twitter:creator" content="@_thurti" />
+    <link rel="me" href="https://social.anoxinon.de/@thurti" />
   </head>
   <body class="min-h-screen w-full p-1 theme-neutral py-12">
     <header class="mt-4">
       <hgroup>
-        <h1 class="text-center align-baseline font-semibold leading-snug">Web Applications</h1>
-        <h2 class="logo text-center align-baseline leading-snug mt-0 !font-extralight text-neutral-100 text-opacity-70">worksoffline.app</h2>
+        <h1 class="text-center align-baseline font-semibold leading-snug">
+          Web Applications
+        </h1>
+        <h2
+          class="logo text-center align-baseline leading-snug mt-0 !font-extralight text-neutral-100 text-opacity-70"
+        >
+          worksoffline.app
+        </h2>
       </hgroup>
     </header>
     <main>
-      <p class="mt-12 mx-auto text-center" style="max-width: 50ch;">Web apps that work without internet connection, registration, newsletter signup, consent banner, &hellip;</p>
+      <p class="mt-12 mx-auto text-center" style="max-width: 50ch">
+        Web apps that work without internet connection, registration, newsletter
+        signup, consent banner, &hellip;
+      </p>
       <div class="app-list my-12">
+        <article class="theme-zinc-purple box prose">
+          <h2>Speech To Text</h2>
+          <p>
+            <b>Transcribe speech</b> from your audio/video files
+            <b>to text</b> and<br />
+            <b>save as</b> txt, csv, json, vtt, srt or lrc.<br />
+          </p>
+          <p>You can also convert <b>multiple files</b> in badge mode.</p>
+          <a
+            href="./speech-to-text"
+            class="button unstyled inline-block select-none rounded-full mt-4 px-8 pt-2 pb-1.5 text-center transition-colors focus-within:ring hover:cursor-pointer highlight"
+            target="_self"
+            title="Open Speech To Text"
+            >Open Speech To Text</a
+          >
+        </article>
 
         <article class="theme-zinc-emerald box prose">
           <h2>Audio File Converter</h2>
           <p>
-            <b>Convert your audio</b> file to mp3, ogg, wav, aac, flac or apple lossless (alac).<br>
-                You can also convert <b>multiple audio files</b> in badge mode.
-                </p>
+            <b>Convert your audio</b> file to mp3, ogg, wav, aac, flac or apple
+            lossless (alac).<br />
+            You can also convert <b>multiple audio files</b> in badge mode.
+          </p>
           <p>
-                  Want to <b>extract audio from a video</b> file? <br>
-                  Just drop the video file and select the output format.
-                </p>
-          <a href="./audio-converter" class="button unstyled inline-block select-none rounded-full mt-4 px-8 pt-2 pb-1.5 text-center transition-colors focus-within:ring hover:cursor-pointer highlight" target="_self" title="Open Audio File Converter">Open Audio Converter</a>
+            Want to <b>extract audio from a video</b> file? <br />
+            Just drop the video file and select the output format.
+          </p>
+          <a
+            href="./audio-converter"
+            class="button unstyled inline-block select-none rounded-full mt-4 px-8 pt-2 pb-1.5 text-center transition-colors focus-within:ring hover:cursor-pointer highlight"
+            target="_self"
+            title="Open Audio File Converter"
+            >Open Audio Converter</a
+          >
         </article>
 
         <article class="theme-zinc-indigo box prose">
           <h2>Video File Converter</h2>
           <p>
-            <b>Resize or convert your video</b> file (up to 2GB) to other formats.<br>
-                You can also convert <b>multiple video files</b> in badge mode.
-                </p>
+            <b>Resize or convert your video</b> file (up to 2GB) to other
+            formats.<br />
+            You can also convert <b>multiple video files</b> in badge mode.
+          </p>
           <p>
-                  Want to <b>convert your video to a gif</b> file? <br>
-                  Just drop the video file and select gif as output.
-                </p>
-          <a href="./video-converter" class="button unstyled inline-block select-none rounded-full mt-4 px-8 pt-2 pb-1.5 text-center transition-colors focus-within:ring hover:cursor-pointer highlight" target="_self" title="Open Video File Converter">Open Video Converter</a>
+            Want to <b>convert your video to a gif</b> file? <br />
+            Just drop the video file and select gif as output.
+          </p>
+          <a
+            href="./video-converter"
+            class="button unstyled inline-block select-none rounded-full mt-4 px-8 pt-2 pb-1.5 text-center transition-colors focus-within:ring hover:cursor-pointer highlight"
+            target="_self"
+            title="Open Video File Converter"
+            >Open Video Converter</a
+          >
         </article>
 
-        <article class="box prose theme-zinc-purple opacity-70 hover:cursor-help">
-          <p>coming next:  <span class=" !text-base italic">there is whisper in my ear&hellip;</span></p>
+        <article
+          class="box prose theme-zinc-cyan opacity-100 hover:cursor-help"
+        >
+          <p>
+            coming next:
+            <span class="!text-base italic">edit my mouth&hellip;</span>
+          </p>
         </article>
+        <article
+          class="box prose theme-zinc-cyan opacity-100 hover:cursor-help"
+        ></article>
+        <article
+          class="box prose theme-zinc-cyan opacity-100 hover:cursor-help"
+        ></article>
       </div>
     </main>
   </body>

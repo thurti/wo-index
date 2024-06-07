@@ -49,6 +49,14 @@
   --theme-font-color: theme(colors.emerald.50);
 }
 
+.theme-zinc-purple {
+  --theme-bg-light-color: theme(colors.zinc.600);
+  --theme-bg-color: theme(colors.zinc.700);
+  --theme-bg-dark-color: theme(colors.zinc.800);
+  --theme-btn-color: theme(colors.purple.600);
+  --theme-font-color: theme(colors.purple.50);
+}
+
 .theme-zinc-cyan {
   --theme-bg-light-color: theme(colors.zinc.600);
   --theme-bg-color: theme(colors.zinc.700);
@@ -57,12 +65,19 @@
   --theme-font-color: theme(colors.cyan.50);
 }
 
-.theme-zinc-purple {
+.theme-zinc-fuchsia {
   --theme-bg-light-color: theme(colors.zinc.600);
   --theme-bg-color: theme(colors.zinc.700);
   --theme-bg-dark-color: theme(colors.zinc.800);
-  --theme-btn-color: theme(colors.purple.600);
-  --theme-font-color: theme(colors.purple.50);
+  --theme-btn-color: theme(colors.fuchsia.700);
+  --theme-font-color: theme(colors.fuchsia.50);
+}
+.theme-zinc-rose {
+  --theme-bg-light-color: theme(colors.zinc.600);
+  --theme-bg-color: theme(colors.zinc.700);
+  --theme-bg-dark-color: theme(colors.zinc.800);
+  --theme-btn-color: theme(colors.rose.600);
+  --theme-font-color: theme(colors.rose.50);
 }
 
 :not(input):focus-visible {
@@ -139,20 +154,30 @@ h2 {
   @apply uppercase;
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 80rem) {
   .app-list {
     @apply mx-16 rounded-tr-3xl rounded-bl-3xl border border-transparent overflow-hidden;
     clip-path: polygon(2.5% 0%, 100% 0%, 97.5% 100%, 0% 100%);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .app-list .box {
   @apply max-w-full;
-  @apply px-8;
+  @apply px-12;
   @apply py-12;
   @apply text-center;
   background-color: var(--theme-btn-color);
   color: var(--theme-font-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .app-list .box h2,
@@ -162,6 +187,9 @@ h2 {
 }
 
 .button {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
   text-decoration: none !important;
   color: var(--theme-font-color);
 }
@@ -172,7 +200,7 @@ h2 {
 }
 
 .highlight {
-  border-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   @apply bg-opacity-100 bg-gradient-to-r from-purple-600 to-pink-600;
 }
 
@@ -187,4 +215,8 @@ h2 {
 
 .button.disabled:hover {
   cursor: not-allowed;
+}
+
+.prose {
+  text-wrap: pretty;
 }
